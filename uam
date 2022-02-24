@@ -1,0 +1,58 @@
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<meta name="robots" content="noindex, nofollow">
+    <title>LuunGuard</title>
+	<link href="./GameSense_files/css" rel="stylesheet" type="text/css">
+	<style type="text/css">#title h1,body{font-weight:400;color:#eee}.divide,.outer{position:absolute;width:100%}#title h1,.trifecta,p{text-align:center}body,html{margin:0;padding:0;height:100%}body{font-family:Raleway,Helvetica Neue,Helvetica,sans-serif;font-size:14px;background-color:#101010}p{font-size:1.75em;color:#ddd;margin:10px 0 0}.divide{top:0;padding:0;margin:0;background:#1e5799;background:-moz-linear-gradient(left,#1e5799 0,#f300ff 50%,#e0ff00 100%);background:-webkit-gradient(linear,left top,right top,color-stop(0,#1e5799),color-stop(50%,#f300ff),color-stop(100%,#e0ff00));background:-webkit-linear-gradient(left,#1e5799 0,#f300ff 50%,#e0ff00 100%);background:-o-linear-gradient(left,#1e5799 0,#f300ff 50%,#e0ff00 100%);background:-ms-linear-gradient(left,#1e5799 0,#f300ff 50%,#e0ff00 100%);background:linear-gradient(to right,#1e5799 0,#f300ff 50%,#e0ff00 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0ff00', GradientType=1 );height:3px;border-bottom:1px solid #000}.trifecta .one,.trifecta .two,.trifecta>div{background-color:#eee}#title h1{margin:0 auto;padding:0;font-size:62pt;height:120px}#title span{color:#6cc312}.outer{display:table;height:100%}.middle{display:table-cell;vertical-align:middle}.inner{margin-left:auto;margin-right:auto;width:400px}.trifecta{margin:0 auto;font-size:26px;width:80px}.trifecta>div{display:inline-block;width:14px;height:14px;border-radius:100%;-webkit-animation:bdelay 1.4s infinite ease-in-out both;animation:bdelay 1.4s infinite ease-in-out both}.trifecta .one{-webkit-animation-delay:-.32s;animation-delay:-.32s}.trifecta .two{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bdelay{0%,100%,80%{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes bdelay{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0)}40%{transform:scale(1);-webkit-transform:scale(1)}}</style>
+</head>
+<body>
+
+<div class="divide"></div>
+<div class="outer"><div class="middle"><div class="inner">
+	<div id="title">
+		<h1>Luun<span>WAF</span></h1>
+	</div>
+	<noscript><h1 data-translate="turn_on_js" style="color:#bd2426;">Please turn JavaScript on and reload the page.</h1></noscript>
+	<div id="gs-content" style="display: block;">
+		<p>Please wait...</p>
+		<div class="trifecta">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		</div>
+		<p>Thanks to Netinternet</p>
+        <form method="POST">
+            <input name="__waf_challenge_dr" type="hidden" value="{{dump}}">
+            <input name="__waf_challenge_time_start" value="now" type="hidden">
+            <input name="__waf_challenge_time_end" value="5" type="hidden">
+            <input name="__waf_challenge_method" value="{{method}}" type="hidden">
+            <input name="__waf_challenge_token" value="" type="hidden">
+        </form>
+    </article>
+    <script language="JavaScript">
+        function ready() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                document.querySelector("input[name='__waf_challenge_token']").value = xhttp.responseText
+                document.querySelector("input[name='__waf_challenge_time_end']").value = Date.now();
+                document.querySelector("form").submit();
+            };
+            xhttp.open("GET", '/.waf/token');
+            xhttp.send();
+        };
+        window.onload = function () {
+            var lang = navigator.language
+            if (lang == "tr-TR" || lang == "tr" || lang == "tr-tr") {
+                document.getElementById("turkish").style.display = 'block';
+                document.getElementById("turkish-title").style.display = 'block';
+            } else {
+                document.getElementById("english").style.display = 'block';
+                document.getElementById("english-title").style.display = 'block';
+            }
+        };
+        document.querySelector("input[name='__waf_challenge_time_start']").value = Date.now();
+        ready();
+    </script>
+</body>
+</html>
